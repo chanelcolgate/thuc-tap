@@ -29,7 +29,7 @@ body:
   - type: textarea
     id: Tests
     attributes:
-      labels: Tests
+      label: Tests
       placeholder: Unit Tests
       value: "Unit test in ..."
     validations:
