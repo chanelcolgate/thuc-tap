@@ -1,0 +1,36 @@
+name: Task Form
+description: A task form with different fields
+body:
+  - type: textarea
+    id: description
+    attributes:
+      label: Description
+      placeholder: Implement the missing code for ...
+      value: "Implement the missing code for ..."
+    validations:
+      required: false
+  
+  - type: textarea
+    id: actions
+    attributes:
+      label: Actions
+    validations:
+      required: false
+
+  - type: dropdown
+    id: estimate
+    attributes:
+      label: Estimate
+      options:
+        - small (1-2 days)
+        - medium (3-4 days)
+        - long (5-7 days)
+
+  - type: textarea
+    id: Tests
+    attributes:
+      labels: Tests
+      placeholder: Unit Tests
+      value: "Unit test in ..."
+    validations:
+      required: false
