@@ -24,11 +24,8 @@ my_model_pipeline = Pipeline(steps=[
     ('bo_nao_du_doan', LinearRegression())
 ])
 
-print("2. Đang huấn luyện mô hình...")
 my_model_pipeline.fit(X_train, y_train)
-print("   -> Đã học xong!")
 
-print("3. Đang chấm thi trên tập Test...")
 y_pred = my_model_pipeline.predict(X_test)
 
 rmse_score = np.sqrt(mean_squared_error(y_test, y_pred)) 
